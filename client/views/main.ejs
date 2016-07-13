@@ -1,0 +1,17 @@
+<html>
+<head>
+ <title></title>
+</head>
+<body>
+  <h2>Here are the awesome quotes!</h2>
+  <% for (var i in quotes) { %>
+  <h3>Name: <%= quotes[i].name %><br>
+  Quote: <%= quotes[i].quote %><br>
+  <a href="/delete/<%= quotes[i].id%>"><button type="submit" class="btn btn-default">Remove</button>
+    <hr>
+  <% } %>
+  <form action="/" method="get">
+<button type="submit" class="btn btn-default">Go Back to Submit</button>
+</form>
+</body>
+</html>
